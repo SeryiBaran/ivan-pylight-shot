@@ -7,9 +7,10 @@ def buildblock(size):
     return ''.join(random.choice(string.ascii_lowercase + string.digits) for _ in range(size))
 
 def open():
-    url = f"https://prnt.sc/{buildblock(6)}"
-    while url.startswith('0') == True:
-        url.replace('0', buildblock(1))
+    l = buildblock(6)
+    while l.startswith('0') == True:
+        l.replace('0', buildblock(1))
+    url = f"https://prnt.sc/{l}"
     print(url)
     webbrowser.open_new_tab(url)
 
