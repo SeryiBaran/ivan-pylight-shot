@@ -16,4 +16,6 @@ def open():
 off = input()
 while off == "":
     open()
+    open()
+    open()
     off = input()
