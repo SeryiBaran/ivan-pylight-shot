@@ -13,9 +13,9 @@ def open():
     print(url)
     webbrowser.open_new_tab(url)
 
-off = input()
+off = input("Нажми 'Enter' чтобы открыть 3 рандомных скриншота: ")
 while off == "":
     open()
     open()
     open()
-    off = input()
+    off = input("Нажми 'Enter' чтобы открыть 3 рандомных скриншота: ")
