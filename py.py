@@ -8,7 +8,7 @@ def buildblock(size):
 
 def open():
     url = f"https://prnt.sc/{buildblock(6)}"
-    if url.startswith('0') == True:
+    while url.startswith('0') == True:
         url.replace('0', buildblock(1))
     print(url)
     webbrowser.open_new_tab(url)
